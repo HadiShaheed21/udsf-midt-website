@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSU Engineering Materials Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>KSU Engineering Portal</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sections" class="nav-link">Sections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#udsf" class="nav-link">UDSF</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to KSU Study Materials Portal</h1>
+                <p>Access comprehensive study materials and resources for all subjects</p>
+                <div class="hero-buttons">
+                    <a href="#sections" class="btn btn-primary">Explore Sections</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Portal</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Comprehensive Study Resources</h3>
+                    <p>Our portal provides students with access to a wide range of study materials, including guides, reference materials, and course resources across different subject areas.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Organized by subject sections</li>
+                        <li><i class="fas fa-check-circle"></i> Easy access to study materials</li>
+                        <li><i class="fas fa-check-circle"></i> Student-friendly interface</li>
+                        <li><i class="fas fa-check-circle"></i> Regular updates and new materials</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>8</h3>
+                        <p>Study Sections</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Study Materials</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Students Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections Grid -->
+    <section id="sections" class="sections">
+        <div class="container">
+            <h2>Study Sections</h2>
+            <p class="section-subtitle">Click on any section to access materials and resources</p>
+            <div class="sections-grid">
+                <div class="section-card" onclick="openSection('s1')">
+                    <div class="section-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Mechanical Engineering</h3>
+                    <p>Design, analysis, and manufacturing of mechanical systems</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s2')">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Civil Engineering</h3>
+                    <p>Construction, structures, and infrastructure development</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s3')">
+                    <div class="section-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Computer Science Engineering</h3>
+                    <p>Programming, algorithms, and software development</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s4')">
+                    <div class="section-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical Engineering</h3>
+                    <p>Power systems, electronics, and electrical circuits</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s5')">
+                    <div class="section-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Electronics Engineering</h3>
+                    <p>Electronic devices, circuits, and communication systems</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s6')">
+                    <div class="section-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Electronics & Communication Engineering</h3>
+                    <p>Communication systems, signals, and networks</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s7')">
+                    <div class="section-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science Engineering</h3>
+                    <p>Data analysis, machine learning, and AI systems</p>
+                    <div class="section-badge">Available</div>
+                </div>
+                <div class="section-card" onclick="openSection('s8')">
+                    <div class="section-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Engineering</h3>
+                    <p>Network security, digital forensics, and cyber defense</p>
+                    <div class="section-badge">Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UDSF Section -->
+    <section id="udsf" class="udsf">
+        <div class="container">
+            <h2>UDSF - College Students Union</h2>
+            <div class="udsf-content">
+                <div class="udsf-info">
+                    <h3>About UDSF</h3>
+                    <p>The University Department Students Federation (UDSF) is the official student union representing all engineering students at KSU. We are committed to providing academic support, organizing events, and fostering a collaborative learning environment.</p>
+                    <div class="udsf-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Student Representation</h4>
+                            <p>Voice of all engineering students</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4>Events & Activities</h4>
+                            <p>Regular workshops and seminars</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Academic Support</h4>
+                            <p>Study groups and peer tutoring</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="udsf-image">
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KSU Engineering Portal</h3>
+                    <p>Providing comprehensive engineering resources for students</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#sections">Sections</a></li>
+                        <li><a href="#udsf">UDSF</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ksu.edu</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KSU Engineering Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
